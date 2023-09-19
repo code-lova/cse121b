@@ -24,7 +24,7 @@ const myImg = document.querySelector("img")
 nameElement.innerHTML = `<strong>${fullName}</strong>`;
 myImg.src = profilePicture;
 myImg.alt = profileImgOf;
-yearElement.innerText = CurrentYear;
+yearElement.textContent = CurrentYear;
 
 
 /* Step 5 - Array */
