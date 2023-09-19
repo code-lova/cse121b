@@ -80,5 +80,20 @@ for (let i = 0; i < scores.length; i++) {
     console.log(score);
   });
 
+  scores[scores.length - 1] 
 
+const homeWard = "Adolor 2";
+const title = ["Home Ward"]
+const ward = `<strong>${title[0]}</strong>: ${homeWard}`;
+console.log(ward);
+
+function createOAuthString(host, clientId, scope) {
+    return host + '/login/oauth/authorize?client_id=' + clientId + '&scope=' + scope
+  }
+  
+  createOAuthString('https://github.com', 'abc123', 'repo,user')
+
+  const d = new Date();
+  let year = d.getFullYear();
+  console.log(year);
 
