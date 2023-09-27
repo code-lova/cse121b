@@ -7,8 +7,11 @@ if (adult){
 
 let names = ["Bob", "Sue", "Jorge", "Svetlana"]
 names[2] = "George"
+console.log(names)
 names.push("Grace")
+console.log(names)
 names.pop()
+console.log(names)
 
 const fruits =[]
 fruits.push("Orange", "mango", "Grape", "Guava")
@@ -33,6 +36,5 @@ console.log(Object.keys(fruits))
 
 
 
-console.log(names)
 
 console.log(myName)
