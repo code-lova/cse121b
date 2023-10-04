@@ -175,3 +175,203 @@ const statusReport = points.map(convertPointsToStatus);
 console.log(statusReport);
 
 
+
+
+
+
+//There is also a foreach method of array
+
+const array1 = ['a', 'b', 'c'];
+array1.forEach((element) => console.log(element));
+
+
+let numberArrayDo = [1,2,3,45,53,53,7,73,2]
+numberArrayDo.forEach(theNumber => {
+    console.log(theNumber);
+});
+
+  
+
+
+const logArrayElements = (element, index /*, array */) => {
+    console.log(`a[${index}] = ${element}`);
+  };
+  
+  // Notice that index 2 is skipped, since there is no item at
+  // that position in the array.
+  [2, 5, , 9].forEach(logArrayElements);
+  // output Logs:
+  // a[0] = 2
+  // a[1] = 5
+  // a[3] = 9
+
+
+  //Call back with array methods
+    /** 
+    1.forEach()
+    2.map()
+    3.find()
+    4.filter()
+    5.every()
+    6.some()
+    7.sort()
+    8.reduce() **/
+
+
+    const nums = [1,2,3,4,5];
+    nums.forEach(function(num) {
+        console.log(num);
+    });
+
+    //example 2
+    const employees = [
+        {
+            id: 101,
+            name: 'Alex',
+            sal: 10000
+        },
+        {
+            id: 102,
+            name: 'Clark',
+            sal: 23000
+        },
+        {
+            id: 103,
+            name: 'John',
+            sal: 22000
+        },
+        {
+            id: 104,
+            name: 'Tony',
+            sal: 20000
+        }
+    ]
+
+    //But This is a callback function
+    employees.forEach(function(employee){
+        console.log(`${employee.name} - ${employee.sal}`);
+    });
+
+    //same output using arrow function method with foreach method.
+    employees.forEach(emp => console.log(`name: ${emp.name} - ${emp.sal}`));
+
+
+
+    //But This is a callback function in map 
+    const theEmployees = employees.map(function(emp){
+        return emp.sal
+    });
+    console.log(theEmployees);
+
+    //using the arrow function with map
+    const myEmployes = employees.map(emp => emp.name);
+    console.log(myEmployes);
+
+
+    const words = ['lol','brb','btw','lmk','g2g'];
+    const abbreviations = words.map(function(word) {
+          return word.toUpperCase().split('').join('.');
+    });
+    console.log(abbreviations); // ['L.O.L', 'B.R.B', 'B.T.W', 'L.M.K', 'G.2.G']
+
+
+
+
+
+
+
+    //Using the find function
+    const studentNames = ['Jimmy Shah','Ram Sharma','Vikram Gupta','Shyam Sharma'];
+
+    const finding = studentNames.find((namez) => namez.includes("Ram"));
+    console.log(finding);
+
+    const findEmployees = employees.find((emp) => emp.sal === 20000);
+    console.log(findEmployees);
+
+
+    
+
+    //using filter function
+    let filtered = studentNames.filter(namez => namez.includes("Ram"));
+    console.log(filtered);
+
+    const filteredDetails = employees.filter(emp => emp.sal >= 20000);
+    console.log(filteredDetails);
+
+
+    //Using every function
+    //it returns true only if the item(s) in the array passes the given function.
+    const theWords = ['kia','karen','king','korean'];
+
+    const usingEvery = theWords.every(namez => namez[0] === "k");
+    console.log(usingEvery);
+
+    const usingE = theWords.every(namez => namez[namez.length-1] === "g");
+    console.log(usingE);
+
+
+    //using the some function 
+    // it returns true if any of the item(s) in the array passes the given function.
+    const theWordz = ['kia','karen','king','korean'];
+
+    const usingSome = theWordz.some(namez => namez[0] === "k");
+    console.log(usingSome);
+
+    const usingSom = theWordz.some(namez => namez[namez.length-1] === "g");
+    console.log(usingSom);
+
+
+    //The sort function 
+    //Natural order sorting 
+    const numbs = [1,20,10,22,30,44,100,11];
+    console.log(numbs.sort()); // [1, 10, 100, 11, 20, 22, 30, 44]
+
+    //Example — 2: Ascending order sorting
+    const result = numbs.sort((a, b) => a - b);
+    console.log(result);
+
+
+
+
+    //The reduce function 
+    //Example — 1: Sum of array elements
+    const digits = [1,2,3,4,5];
+    const initValue = 0;
+    const reduceAnswer = digits.reduce((sum, numx) => sum + numx, initValue);
+    console.log(`the reduce answer is: ${reduceAnswer}`);
+
+    //Example — 2: Find maximum using reducer() metho
+    const maxList = [44,2,66,45,17];
+    let answer = maxList.reduce((max, item) => Math.max(max, item));
+    console.log(`The maximum number in the list is: ${answer}`);
+
+
+    //Example — 3: Tallying Votes
+    const votes = ['y','y','n','y','n','n','n'];
+    const resultz = votes.reduce((tally,vote) => {
+        tally[vote] = ( tally[vote] || 0 ) + 1 
+        return tally;
+    },{}); // Initial value: {}
+    console.log(resultz);
+
+
+    //defining function
+    function calculate(a, b, displayResult){
+        return displayResult = a + b;
+    }
+
+    calculate(2, 3, displayResult);
+
+
+
+  setTimeout(() => {
+    console.log("this is the first message");
+  }, 5000);
+  setTimeout(() => {
+    console.log("this is the second message");
+  }, 3000);
+  setTimeout(() => {
+    console.log("this is the third message");
+  }, 1000);
+

@@ -34,7 +34,29 @@ console.log(fruits[3])
 console.log(Object.keys(fruits))
 
 
-
-
-
 console.log(myName)
+
+
+
+
+
+var mytext = "i am a string";
+let newText = mytext.replace("string", "lover")
+console.log(mytext);
+console.log(newText);
+
+const textSentence = ["i", "am", "going","to","school"];
+
+const mapTheText = Object.keys(textSentence);
+
+const newSentence = textSentence.join(" ");
+console.log(textSentence);
+console.log(newSentence);
+console.log(mapTheText);
+
+
+
+
+
+const myNumber = Math.random();
+console.log(myNumber);
