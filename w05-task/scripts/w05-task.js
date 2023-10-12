@@ -11,9 +11,9 @@ var templeList = [];
 /* async displayTemples Function */
 const displayTemples = (templeList) => {
     templeList.forEach((temples) => {
-
-        const templeCard = document.createElement("div");
-        templeCard.className = "temple-card";
+    
+        const templeCard = document.createElement("div"); /** for each temple in the list put them in a css card style */
+        templeCard.className = "temple-card"; //add the styles in the css file
 
         const articleElement = document.createElement("article");
         const h3Element = document.createElement("h3");
