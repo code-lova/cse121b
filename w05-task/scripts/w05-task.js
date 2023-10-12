@@ -12,9 +12,6 @@ var templeList = [];
 const displayTemples = (templeList) => {
     templeList.forEach((temples) => {
 
-        const templeCardContainer = document.createElement("div");
-        templeCardContainer.className = "temple-card-container";
-
         const templeCard = document.createElement("div");
         templeCard.className = "temple-card";
 
@@ -33,14 +30,16 @@ const displayTemples = (templeList) => {
         imgElement.style.width = newWidth;
         imgElement.style.height = newHeight;
         imgElement.style.boxShadow = newImgShadow;
+
+
     
         articleElement.appendChild(h3Element);
         articleElement.appendChild(imgElement);
         
     
         templeCard.appendChild(articleElement);
-        templeCardContainer.appendChild(templeCard);
-        templesElement.appendChild(templeCardContainer);
+        templesElement.appendChild(templeCard);
+
     })
 }
 
@@ -109,15 +108,15 @@ const sortBy = (temples) => {
     }
 }
 
+
+
+getTemples();
+
+/* Event Listener */
+
 const selectElementId = document.querySelector("#sortBy");
 
 selectElementId.addEventListener("change", () =>  {
     const filter = selectElementId.value;
     sortBy(templeList, filter);
 });
-
-
-
-getTemples();
-
-/* Event Listener */

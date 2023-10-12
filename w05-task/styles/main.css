@@ -147,11 +147,7 @@ footer {
     background-color: rgba(0, 0, 0, 0.122);
 }
 
-.temple-card-container {
-    display: flex;
-    flex-wrap: wrap; /* Wrap items onto new rows */
-    justify-content: space-between;
-  }
+
 
 
 /* ID Selectors */
