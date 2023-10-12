@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    <p>This example requires you to enter commands in your browser's JavaScript console (see <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are browser developer tools</a> for more information).</p>
+    
+    <script>
+        const person = {
+            name: {
+                first: "Bob",
+                last: "Smith",
+            },
+            age: 32,
+
+            bio() {
+                console.log(`${this.name.first} ${this.name.last} is ${this.age} years old`);
+            },
+
+            introduceSelf() {
+                console.log(`Hi i am ${this.name.first}`);
+            },
+        };
+
+        //By doing this we have added a new member and its value to our person object.
+        const myDataName = "Height";
+        const myDateValue = "1.75cm";
+        person[myDataName] = myDateValue;
+
+        function logProperty(propertyName){
+            console.log(person[propertyName]);
+        } 
+        
+        //we can also give the person object members a new value too.
+       person.age = 59;
+       person.name.last = "Chaber lastly";
+
+        person['eyes'] = "Hazel";
+        person.farewell = function(){
+            console.log("Bye everybody");
+        }
+
+        //Using constructors to create new objects
+        function createPerson(name){
+            this.name = name;
+            this.introduceSelf = function(){
+                console.log(`my name is ${this.name}.`)
+            };
+        }
+
+        //To call Person() as a constructor, we use new:
+        const silva = new createPerson("Silvia");
+        silva.name;
+        silva.introduceSelf();
+
+        const victor = new createPerson("victor");
+        victor.name;
+        victor.introduceSelf();
+
+    </script>
+  </body>
+
+</html>
