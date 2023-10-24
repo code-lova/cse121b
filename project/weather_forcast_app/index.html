@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forcast Application</title>
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+    <div class="app-container">
+        <div class="app-title">
+            <b>My Weather App</b>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Enter a location" spellcheck="false">
+            <button id="search-button">SEARCH <span><img src="images/search.png" class="search-img" alt="img"> </span></button>
+        </div>
+        <p id="errors"></p>
+
+        <img class="gifimg" id="gifimage" src="images/img.gif" alt="weather">
+
+        <div class="weather-display" id="weathers-display">
+
+            <img class="weather-icon" src="images/rain.png" alt="weather-img">
+
+            <h1 class="temp">72°c</h1>
+            <h5 class="description">Over cloudy</h5>
+            <h6 class="feels"></h6>
+            <h2 class="city">New York</h2>
+
+            <div class="details">
+
+                <div class="col">
+                    <img src="images/humidity.png" alt="humidity">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="images/wind.png" alt="wind">
+                    <div>
+                        <p class="wind">15k/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>

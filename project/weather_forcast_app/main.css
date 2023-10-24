@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1c1c;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.app-container p{
+    color: #ccc;
+}
+
+.app-title{
+    color: #fff;
+    font-size: x-large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 15px;
+}
+
+.gifimg{
+    width: 350px;
+    margin-top: -30px;
+}
+
+.loader{
+    width: 100px;
+    display: none;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-right: 10px;
+    width: 300px;
+    font-size: medium;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #00fef1, #5b548a);
+    color: #f8f3f3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-img{
+    height: 1rem;
+    margin-left:2px;
+    
+}
+
+.weather-display {
+    text-align: center;
+    background: linear-gradient(135deg, #00fef1, #5b548a);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    height: 0 auto;
+    width: 410px;
+    display: none;
+}
+
+.weather-display h1 {
+    font-size: 80px;
+    font-weight: 500px;
+}
+
+.weather-display h2 {
+    font-size: 45px;
+    font-weight: 400px;
+    margin-top: -15px;
+}
+
+
+.weather-display h5 {
+    font-size: 20px;
+    font-weight: 100px;
+    margin-top: -20px;
+    text-transform: capitalize;
+}
+
+.weather-display h6 {
+    font-size: 15px;
+    font-weight: 50px;
+    margin-top: -20px;
+    text-transform: capitalize;
+}
+
+.weather-display p {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.weather-icon{
+    width: 170px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+

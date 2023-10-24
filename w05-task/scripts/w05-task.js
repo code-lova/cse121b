@@ -17,7 +17,8 @@ const displayTemples = (templeList) => {
 
         const articleElement = document.createElement("article");
         const h3Element = document.createElement("h3");
-        h3Element.textContent = temples.templeName;
+        h3Element.innerHTML = temples.templeName;
+        
 
         const imgElement = document.createElement("img");
         const newWidth = "300px";
@@ -67,7 +68,6 @@ const getTemples = async() => {
 
 
 /* reset Function */
-
 const reset = function(){
     const templesElement = document.querySelector("#temples");
     while(templesElement.firstChild){
