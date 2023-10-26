@@ -29,10 +29,6 @@ body {
     margin-top: -30px;
 }
 
-.loader{
-    width: 100px;
-    display: none;
-}
 
 .search-container {
     display: flex;
@@ -128,3 +124,55 @@ body {
     margin-right: 10px;
 }
 
+
+/* Add a media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .gifimg {
+        width: 250px; /* Adjust as needed */
+        margin-top: -20px; /* Adjust as needed */
+    }
+
+ 
+    #search-input {
+        width: 200px; /* Adjust as needed */
+    }
+
+    #search-button {
+        padding: 10px 15px; /* Adjust as needed */
+    }
+
+    .search-img {
+        height: 0.8rem; /* Adjust as needed */
+    }
+
+    .weather-display {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .weather-display h1 {
+        font-size: 60px; /* Adjust as needed */
+    }
+
+    .weather-display h2 {
+        font-size: 30px; /* Adjust as needed */
+        margin-top: -10px; /* Adjust as needed */
+    }
+
+    .weather-display h5 {
+        font-size: 18px; /* Adjust as needed */
+        margin-top: -12px; /* Adjust as needed */
+    }
+
+    .weather-display h6 {
+        font-size: 12px; /* Adjust as needed */
+        margin-top: -12px; /* Adjust as needed */
+    }
+
+    .weather-icon {
+        width: 120px; /* Adjust as needed */
+    }
+
+    .details {
+        padding: 0 10px; /* Adjust as needed */
+    }
+}
