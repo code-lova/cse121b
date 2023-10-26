@@ -126,15 +126,15 @@ body {
 
 
 /* Add a media query for screens with a maximum width of 768px */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .gifimg {
-        width: 250px; /* Adjust as needed */
+        width: 200px; /* Adjust as needed */
         margin-top: -20px; /* Adjust as needed */
     }
 
  
     #search-input {
-        width: 200px; /* Adjust as needed */
+        width: 150px; /* Adjust as needed */
     }
 
     #search-button {
@@ -146,7 +146,7 @@ body {
     }
 
     .weather-display {
-        width: 100%; /* Full width on smaller screens */
+        width: 340px; /* Full width on smaller screens */
     }
 
     .weather-display h1 {
